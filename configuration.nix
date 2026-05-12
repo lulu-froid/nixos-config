@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      # inputs.home-manager.nixosModules.default
+      inputs.home-manager.nixosModules.default
     ];
 
   # Bootloader.
@@ -138,13 +138,13 @@
     ];
   };
 
-#  home-manager = {
-#    # also pass inputs to home-manager modules
-#    extraSpecialArgs = {inherit inputs;};
-#    users = {
-#      "lucien" = import ./home.nix;
-#    };
-#  };
+ home-manager = {
+   # also pass inputs to home-manager modules
+   extraSpecialArgs = {inherit inputs;};
+   users = {
+     "lucien" = import ./home.nix;
+   };
+ };
 
   programs.git = {
     enable = true;
