@@ -3,9 +3,11 @@
 {
   programs.git = {
     enable = true;
-    config = {
-      user.name = "Lucien";
-      user.email = "lucien.glasson@gmail.com";
+    settings = {
+      user = {
+        name = "Lucien";
+        email = "lucien.glasson@gmail.com";
+      };
       init.defaultBranch = "main";
       safe.directory = "/etc/nixos";
     };
