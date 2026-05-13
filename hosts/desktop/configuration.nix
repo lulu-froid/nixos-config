@@ -12,6 +12,7 @@
       ../../modules/nixos/ssh.nix
       ../../modules/nixos/firefox.nix
       ../../modules/nixos/system.nix
+      ../../modules/nixos/packages
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
     ];
