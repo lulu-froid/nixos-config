@@ -8,7 +8,7 @@
       "github.com" = {
         hostname = "github.com";
         user = "git";
-        identityFile = "~/.ssh/git";
+        identityFile = "~/.ssh/github";
       };
       "cremi" = {
         hostname = "sshproxy.emi.u-bordeaux.fr";
