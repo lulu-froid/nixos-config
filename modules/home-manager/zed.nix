@@ -1,11 +1,11 @@
-{ ... } =
+{ ... }:
 
 {
   programs.zed-editor  = {
     enable  = true;
 
     # This populates the userSettings auto_install_extensions
-    extensions  = [ "nix" "make" ];
+    extensions  = [ "nix" "make" "Git Firefly" "Tokyo Night Themes" "Colored Zed Icons Theme" "Python Lsp" "Prolog"];
 
     # Everything inside of these brackets are Zed options
     userSettings  = {
@@ -18,23 +18,23 @@
       # custom settings; run `zed = open default settings` from the
       # command palette (cmd-shift-p / ctrl-shift-p)
       project_panel = {
-        dock = left;
+        dock = "left";
       };
 
       outline_panel = {
-        dock = left;
+        dock = "left";
       };
 
       collaboration_panel = {
-        dock = left;
+        dock = "left";
       };
 
       git_panel = {
-        dock = left;
+        dock = "left";
       };
 
       edit_predictions = {
-        provider = zed;
+        provider = "zed";
       };
 
       terminal = {
@@ -49,49 +49,49 @@
       icon_theme = "Colored Zed Icons Theme Dark";
 
       agent = {
-        dock = right;
-        default_profile = ask;
+        dock = "right";
+        default_profile = "ask";
       };
 
       languages = {
-        Plain Text = {
+        "Plain Text" = {
           ensure_final_newline_on_save = false;
         };
-        Prolog = {
+        "Prolog" = {
           tab_size = 4;
         };
-        Nix = {
+        "Nix" = {
           show_edit_predictions = false;
         };
-        JSONC = {
+        "JSONC" = {
           show_edit_predictions = false;
         };
-        C++ = {
-          format_on_save = on;
+        "C++" = {
+          format_on_save = "on";
         };
-        C = {
+        "C" = {
           hard_tabs = false;
-          format_on_save = on;
+          format_on_save = "on";
           tab_size = 4;
         };
-        Python = {
+        "Python" = {
           show_edit_predictions = false;
-          format_on_save = on;
+          format_on_save = "on";
         };
       };
       ui_font_size = 16;
       buffer_font_size = 16;
       theme = {
-        mode = system;
-        light = One Light;
-        dark = Tokyo Night;
+        mode = "system";
+        light = "One Light";
+        dark = "Tokyo Night";
       };
-      autosave = on_focus_change;
+      autosave = "on_focus_change";
       # futurist = Quantico
       # fancy =
       # default = JetBrains Mono
-      ui_font_family = JetBrains Mono;
-      buffer_font_family = JetBrains Mono;
+      ui_font_family = "JetBrains Mono";
+      buffer_font_family = "JetBrains Mono";
     };
   };
 }
