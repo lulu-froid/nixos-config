@@ -5,6 +5,7 @@
   imports = [
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/ssh.nix
+    ../../modules/home-manager/zed.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
