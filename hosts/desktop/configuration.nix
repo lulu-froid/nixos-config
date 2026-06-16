@@ -14,7 +14,8 @@
       ../../modules/nixos/system.nix
       ../../modules/nixos/packages/editors.nix
       ../../modules/nixos/packages/programming.nix
-      ../../modules/nixos/packages/terminal.nix
+      ../../modules/nixos/packages/tui.nix
+      ../../modules/nixos/packages/zsh.nix
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
     ];
