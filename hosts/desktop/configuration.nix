@@ -16,6 +16,7 @@
       ../../modules/nixos/packages/programming.nix
       ../../modules/nixos/packages/tui.nix
       ../../modules/nixos/packages/zsh.nix
+      ../../modules/nixos/packages/gui.nix
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
     ];
